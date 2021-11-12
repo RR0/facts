@@ -1,10 +1,6 @@
 import {Place} from '../place/Place'
-import {RR0Time, TimeRenderOptions} from "./Time";
-import {BirthEventRenderer} from "./people/birth/BirthEvent";
-import {OccupationEventRenderer} from "./people/occupation/OccupationEvent";
-import {FoundationEventRenderer} from "./org/foundation/FoundationEvent";
-import {StudyEventRenderer} from "./people/study/StudyEvent";
-import {PeopleRenderOptions} from "../people/render/HTMLPeopleRenderer";
+import {RR0Time} from "./Time"
+import {EventRenderer, EventRenderOptions} from "./EventRenderer"
 
 
 export enum RR0EventType {
@@ -14,22 +10,6 @@ export enum RR0EventType {
   study = 'study',
 }
 
-
-export interface EventRenderer<R> extends BirthEventRenderer<R>, OccupationEventRenderer<R>, FoundationEventRenderer<R>, StudyEventRenderer<R> {
-  /**
-   * Render an event.
-   */
-  render(event: RR0Event, options: EventRenderOptions): R
-}
-
-
-export interface EventRenderOptions {
-  who: PeopleRenderOptions
-  time: TimeRenderOptions
-  verb: boolean
-}
-
-
 /**
  * Something that occurred.
  */
@@ -38,6 +18,13 @@ export abstract class RR0Event {
   protected constructor(readonly type: RR0EventType, readonly when?: RR0Time, readonly where?: Place) {
   }
 
+  /**
+   * Delegate the event rendering to a renderer.
+   *
+   * @param R the rendering result type.
+   * @param renderer
+   * @param options
+   */
   abstract render<R>(renderer: EventRenderer<R>, options: EventRenderOptions): R
 
   /**
@@ -46,10 +33,10 @@ export abstract class RR0Event {
    * @return null if not known.
    */
   isBefore(otherEvent: RR0Event): Boolean | null {
-    return this.when ? this.when.isBefore(otherEvent.when) : null;
+    return this.when ? this.when.isBefore(otherEvent.when) : null
   }
 
   isAfter(otherEvent: RR0Event) {
-    return this.when ? this.when.isAfter(otherEvent.when) : null;
+    return this.when ? this.when.isAfter(otherEvent.when) : null
   }
 }

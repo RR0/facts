@@ -1,17 +1,14 @@
-import {EventRenderer, EventRenderOptions, RR0Event} from "../Event"
+import {RR0Event} from "../Event"
 import {HTML, HTMLRenderer} from "../../HTMLRenderer"
-import {PlaceRenderer} from "../../place/Place";
-import {TimeRenderer} from "../Time";
-import {OccupationEvent, OccupationEventRenderer, OccupationRenderOptions} from "../people/occupation/OccupationEvent";
-import {BirthEvent, BirthEventRenderer, BirthEventRenderOptions} from "../people/birth/BirthEvent";
-import {WithEventMessages} from "../EventMessages";
-import {
-  FoundationEvent,
-  FoundationEventRenderer,
-  FoundationEventRenderOptions
-} from "../org/foundation/FoundationEvent";
-import {StudyEvent, StudyEventRenderer, StudyRenderOptions} from "../people/study/StudyEvent";
-import {Translation} from "@rr0/lang";
+import {PlaceRenderer} from "../../place/Place"
+import {TimeRenderer} from "../Time"
+import {OccupationEvent, OccupationEventRenderer, OccupationRenderOptions} from "../people/occupation/OccupationEvent"
+import {BirthEvent, BirthEventRenderer, BirthEventRenderOptions} from "../people/birth/BirthEvent"
+import {WithEventMessages} from "../EventMessages"
+import {FoundationEvent, FoundationEventRenderer, FoundationEventRenderOptions} from "../org/foundation/FoundationEvent"
+import {StudyEvent, StudyEventRenderer, StudyRenderOptions} from "../people/study/StudyEvent"
+import {Translation} from "@rr0/lang"
+import {EventRenderer, EventRenderOptions} from "../EventRenderer"
 
 
 /**

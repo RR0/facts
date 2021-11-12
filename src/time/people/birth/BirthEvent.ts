@@ -1,11 +1,12 @@
-import {OccupationRenderOptions} from "../occupation/OccupationEvent";
-import {RR0Time, TimeRenderFormat} from "../../Time";
-import {EventRenderOptions, RR0EventType} from "../../Event";
-import {PeopleEvent} from "../PeopleEvent";
-import {PeopleNameFormat, PeopleRenderOptions} from "../../../people/render/HTMLPeopleRenderer";
-import {People} from "../../../people/People";
-import {OrganizationDescriptionOptions} from "../../../org/render/HTMLOrganizationRenderer";
-import {Place} from "../../../place/Place";
+import {OccupationRenderOptions} from "../occupation/OccupationEvent"
+import {RR0Time, TimeRenderFormat} from "../../Time"
+import {RR0EventType} from "../../Event"
+import {PeopleEvent} from "../PeopleEvent"
+import {PeopleNameFormat, PeopleRenderOptions} from "../../../people/render/HTMLPeopleRenderer"
+import {People} from "../../../people/People"
+import {OrganizationDescriptionOptions} from "../../../org/render/HTMLOrganizationRenderer"
+import {Place} from "../../../place/Place"
+import {EventRenderOptions} from "../../EventRenderer"
 
 
 export class OccupationFormat {
