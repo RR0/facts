@@ -1,17 +1,17 @@
-import {HTMLPlaceRenderer} from "./place/render/HTMLPlaceRenderer";
-import {HTMLPeopleRenderer, PeopleNameFormat, PeopleNameRenderOptions} from "./people/render/HTMLPeopleRenderer";
-import {HTMLTimeRenderer} from "./time/render/HTMLTimeRenderer";
-import {HTMLEventRenderer} from "./time/render/HTMLEventRenderer";
-import {HTML, HTMLRenderer} from "./HTMLRenderer";
-import {People} from "./people/People";
-import {HTMLOrganizationRenderer} from "./org/render/HTMLOrganizationRenderer";
-import {TimelineRenderOptions} from "./time/Timeline";
-import {HTMLOccupationRenderer} from "./time/people/occupation/HTMLOccupationRenderer";
-import {HTMLBirthEventRenderer} from "./time/people/birth/HTMLBirthEventRenderer";
-import {HTMLStudyRenderer} from "./time/people/study/HTMLStudyRenderer";
-import {HTMLFoundationEventRenderer} from "./time/org/foundation/HTMLFoundationEventRenderer";
-import {RR0EventType} from "./time/Event";
-import {Translation} from "@rr0/lang";
+import {HTMLPlaceRenderer} from "place/render/HTMLPlaceRenderer"
+import {HTMLPeopleRenderer, PeopleNameFormat, PeopleNameRenderOptions} from "people/render/HTMLPeopleRenderer"
+import {HTMLTimeRenderer} from "time/render/HTMLTimeRenderer"
+import {HTMLEventRenderer} from "time/render/HTMLEventRenderer"
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {People} from "people/People"
+import {HTMLOrganizationRenderer} from "org/render/HTMLOrganizationRenderer"
+import {TimelineRenderOptions} from "time/Timeline"
+import {HTMLOccupationRenderer} from "time/people/occupation/HTMLOccupationRenderer"
+import {HTMLBirthEventRenderer} from "time/people/birth/HTMLBirthEventRenderer"
+import {HTMLStudyRenderer} from "time/people/study/HTMLStudyRenderer"
+import {HTMLFoundationEventRenderer} from "time/org/foundation/HTMLFoundationEventRenderer"
+import {RR0EventType} from "time/Event"
+import {Translation} from "@rr0/lang"
 
 
 export interface HTMLDocRenderOptions {

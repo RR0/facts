@@ -1,9 +1,9 @@
-import {HTMLPlaceRenderer} from "./HTMLPlaceRenderer";
-import {City} from "../City";
-import {messages_fr} from "../../lang/Messages_fr";
-import {States} from "../state/States";
-import {grammar_fr, Translation} from "@rr0/lang";
-// jest.mock('../../lang/Translator');
+import {HTMLPlaceRenderer} from "place/render/HTMLPlaceRenderer"
+import {City} from "place/City"
+import {messages_fr} from "lang/Messages_fr"
+import {States} from "place/state/States"
+import {grammar_fr, Translation} from "@rr0/lang"
+// jest.mock('lang/Translator');
 
 test('render city', () => {
   const translation = new Translation('fr', grammar_fr, messages_fr);

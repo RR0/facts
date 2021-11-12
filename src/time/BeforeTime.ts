@@ -1,5 +1,5 @@
-import {RR0Time, TimeRenderer, TimeRenderOptions} from "./Time";
-import {DateTime} from "./DateTime";
+import {RR0Time, TimeRenderer, TimeRenderOptions} from "time/Time"
+import {DateTime} from "time/DateTime"
 
 
 /**

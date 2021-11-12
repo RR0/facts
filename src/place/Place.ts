@@ -1,6 +1,6 @@
-import {CityRenderer} from "./City";
-import {Country, CountryRenderer} from "./country/Country";
-import {StateRenderer} from "./state/State";
+import {CityRenderer} from "place/City"
+import {Country, CountryRenderer} from "place/country/Country"
+import {StateRenderer} from "place/state/State"
 
 
 export interface PlaceRenderer<R> extends CityRenderer<R>, StateRenderer<R>, CountryRenderer<R> {

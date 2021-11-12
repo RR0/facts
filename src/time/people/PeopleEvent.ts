@@ -1,7 +1,7 @@
-import {RR0Event, RR0EventType} from "../Event";
-import {RR0Time} from "../Time";
-import {People} from "../../people/People";
-import {Place} from "../../place/Place";
+import {RR0Event, RR0EventType} from "time/Event"
+import {RR0Time} from "time/Time"
+import {People} from "people/People"
+import {Place} from "place/Place"
 
 
 /**

@@ -4,15 +4,11 @@ import {TimeRenderer} from "time/Time"
 import {OccupationEvent, OccupationEventRenderer, OccupationRenderOptions} from "time/people/occupation/OccupationEvent"
 import {BirthEvent, BirthEventRenderer, BirthEventRenderOptions} from "time/people/birth/BirthEvent"
 import {WithEventMessages} from "time/EventMessages"
-import {
-  FoundationEvent,
-  FoundationEventRenderer,
-  FoundationEventRenderOptions
-} from "time/org/foundation/FoundationEvent"
+import {FoundationEvent, FoundationEventRenderer, FoundationEventRenderOptions} from "../org/foundation/FoundationEvent"
 import {StudyEvent, StudyEventRenderer, StudyRenderOptions} from "time/people/study/StudyEvent"
 import {Translation} from "@rr0/lang"
 import {EventRenderer, EventRenderOptions} from "time/EventRenderer"
-import {HTML, HTMLRenderer} from "../../HTMLRenderer"
+import {HTML, HTMLRenderer} from "HTMLRenderer"
 
 
 /**

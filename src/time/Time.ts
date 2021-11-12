@@ -1,5 +1,5 @@
-import {DateTime} from "./DateTime"
-import {BeforeTime} from "./BeforeTime"
+import {DateTime} from "time/DateTime"
+import {BeforeTime} from "time/BeforeTime"
 
 
 export enum TimeWeekdayRenderOptions {

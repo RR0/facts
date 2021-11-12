@@ -1,14 +1,14 @@
-import {HTMLOrganizationRenderer, OrganizationDescriptionOptions} from "./HTMLOrganizationRenderer";
-import {Company} from "../Company";
-import {Army} from "../Army";
-import {messages_fr} from "../../lang/Messages_fr";
-import {HTMLPlaceRenderer} from "../../place/render/HTMLPlaceRenderer";
-import {FoundationEvent} from "../../time/org/foundation/FoundationEvent";
-import {BeforeTime} from "../../time/BeforeTime";
-import {DateTime} from "../../time/DateTime";
-import {School, SchoolType} from "../School";
-import {Countries} from "../../place/country/Countries";
-import {grammar_fr, Translation} from "@rr0/lang";
+import {HTMLOrganizationRenderer, OrganizationDescriptionOptions} from "org/render/HTMLOrganizationRenderer"
+import {Company} from "org/Company"
+import {Army} from "org/Army"
+import {messages_fr} from "lang/Messages_fr"
+import {HTMLPlaceRenderer} from "place/render/HTMLPlaceRenderer"
+import {FoundationEvent} from "time/org/foundation/FoundationEvent"
+import {BeforeTime} from "time/BeforeTime"
+import {DateTime} from "time/DateTime"
+import {School, SchoolType} from "org/School"
+import {Countries} from "place/country/Countries"
+import {grammar_fr, Translation} from "@rr0/lang"
 
 
 const translation = new Translation('fr', grammar_fr, messages_fr);

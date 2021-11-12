@@ -1,5 +1,5 @@
-import {Organization, OrganizationRenderer, OrganizationType} from "./Organization";
-import {OrganizationRenderOptions} from "./render/HTMLOrganizationRenderer";
+import {Organization, OrganizationRenderer, OrganizationType} from "org/Organization"
+import {OrganizationRenderOptions} from "org/render/HTMLOrganizationRenderer"
 
 
 export class Company extends Organization {

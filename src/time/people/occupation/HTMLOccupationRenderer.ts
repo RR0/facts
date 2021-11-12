@@ -1,9 +1,9 @@
-import {HTML, HTMLRenderer} from "../../../HTMLRenderer";
-import {OccupationEvent, OccupationEventRenderer, OccupationRenderOptions} from "./OccupationEvent";
-import {OrganizationRenderer} from "../../../org/Organization";
-import {WithEventMessages} from "../../EventMessages";
-import {HTMLPeopleRenderer} from "../../../people/render/HTMLPeopleRenderer";
-import {Translation} from "@rr0/lang";
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {OccupationEvent, OccupationEventRenderer, OccupationRenderOptions} from "./OccupationEvent"
+import {OrganizationRenderer} from "org/Organization"
+import {WithEventMessages} from "time/EventMessages"
+import {HTMLPeopleRenderer} from "people/render/HTMLPeopleRenderer"
+import {Translation} from "@rr0/lang"
 
 
 export class HTMLOccupationRenderer extends HTMLRenderer implements OccupationEventRenderer<HTML> {

@@ -1,10 +1,10 @@
-import {HTML, HTMLRenderer} from "../../../HTMLRenderer";
-import {StudyEvent, StudyEventRenderer, StudyRenderOptions} from "./StudyEvent";
-import {OrganizationRenderer} from "../../../org/Organization";
-import {WithEventMessages} from "../../EventMessages";
-import {HTMLPeopleRenderer} from "../../../people/render/HTMLPeopleRenderer";
-import {Translation} from "@rr0/lang";
-import {StringUtils} from "@rr0/common";
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {StudyEvent, StudyEventRenderer, StudyRenderOptions} from "./StudyEvent"
+import {OrganizationRenderer} from "org/Organization"
+import {WithEventMessages} from "time/EventMessages"
+import {HTMLPeopleRenderer} from "people/render/HTMLPeopleRenderer"
+import {Translation} from "@rr0/lang"
+import {StringUtils} from "@rr0/common"
 
 
 export class HTMLStudyRenderer extends HTMLRenderer implements StudyEventRenderer<HTML> {

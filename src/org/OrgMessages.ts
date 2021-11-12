@@ -1,4 +1,4 @@
-import {OrganizationType} from "./Organization";
+import {OrganizationType} from "org/Organization"
 
 
 export interface OrgMessages {

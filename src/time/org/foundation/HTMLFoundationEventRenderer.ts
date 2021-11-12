@@ -1,13 +1,13 @@
-import {TimeRenderer} from "../../Time";
-import {People, PeopleRenderer} from "../../../people/People";
-import {Country} from "../../../place/country/Country";
-import {HTML, HTMLRenderer} from "../../../HTMLRenderer";
-import {Place, PlaceRenderer} from "../../../place/Place";
-import {FoundationEvent, FoundationEventRenderer, FoundationEventRenderOptions} from "./FoundationEvent";
-import {OccupationEvent, OccupationEventRenderer} from "../../people/occupation/OccupationEvent";
-import {Organization, OrganizationRenderer} from "../../../org/Organization";
-import {WithEventMessages} from "../../EventMessages";
-import {Translation} from "@rr0/lang";
+import {TimeRenderer} from "time/Time"
+import {People, PeopleRenderer} from "people/People"
+import {Country} from "place/country/Country"
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {Place, PlaceRenderer} from "place/Place"
+import {FoundationEvent, FoundationEventRenderer, FoundationEventRenderOptions} from "./FoundationEvent"
+import {OccupationEvent, OccupationEventRenderer} from "time/people/occupation/OccupationEvent"
+import {Organization, OrganizationRenderer} from "org/Organization"
+import {WithEventMessages} from "time/EventMessages"
+import {Translation} from "@rr0/lang"
 
 export class HTMLFoundationEventRenderer extends HTMLRenderer implements FoundationEventRenderer<HTML> {
 

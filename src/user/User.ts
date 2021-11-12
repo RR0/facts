@@ -1,4 +1,4 @@
-import {People} from ".."
+import {People} from "people/People"
 import {Gender, UserPreferences} from "@rr0/common"
 
 export class User extends People {

@@ -1,5 +1,5 @@
-import {Place} from "../Place";
-import {Country} from "../country/Country";
+import {Place} from "place/Place"
+import {Country} from "place/country/Country"
 
 
 export interface StateRenderer<R> {

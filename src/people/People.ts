@@ -1,6 +1,6 @@
-import {PeopleRenderOptions} from "./render/HTMLPeopleRenderer"
-import {Timeline} from "../time/Timeline"
-import {Country} from "../place/country/Country"
+import {PeopleRenderOptions} from "people/render/HTMLPeopleRenderer"
+import {Timeline} from "time/Timeline"
+import {Country} from "place/country/Country"
 import {Gender} from "@rr0/common"
 
 

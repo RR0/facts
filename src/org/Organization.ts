@@ -1,9 +1,9 @@
-import {Company} from "./Company";
-import {Army} from "./Army";
-import {OrganizationRenderOptions} from "./render/HTMLOrganizationRenderer";
-import {Timeline} from "../time/Timeline";
-import {Country} from "../place/country/Country";
-import {School} from "./School";
+import {Company} from "org/Company"
+import {Army} from "org/Army"
+import {OrganizationRenderOptions} from "org/render/HTMLOrganizationRenderer"
+import {Timeline} from "time/Timeline"
+import {Country} from "place/country/Country"
+import {School} from "org/School"
 
 
 export interface OrganizationRenderer<R> {

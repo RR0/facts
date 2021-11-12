@@ -1,6 +1,6 @@
-import {People, PeopleRenderer} from "../People"
-import {HTML, HTMLRenderer} from "../../HTMLRenderer"
-import {Translation} from "@rr0/lang";
+import {People, PeopleRenderer} from "people/People"
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {Translation} from "@rr0/lang"
 
 
 export enum NameCase {

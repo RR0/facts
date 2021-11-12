@@ -1,10 +1,10 @@
-import {BirthEventRenderer} from "./people/birth/BirthEvent"
-import {OccupationEventRenderer} from "./people/occupation/OccupationEvent"
-import {FoundationEventRenderer} from "./org/foundation/FoundationEvent"
-import {StudyEventRenderer} from "./people/study/StudyEvent"
-import {RR0Event} from "./Event"
-import {PeopleRenderOptions} from "../people/render/HTMLPeopleRenderer"
-import {TimeRenderOptions} from "./Time"
+import {BirthEventRenderer} from "time/people/birth/BirthEvent"
+import {OccupationEventRenderer} from "time/people/occupation/OccupationEvent"
+import {FoundationEventRenderer} from "time/org/foundation/FoundationEvent"
+import {StudyEventRenderer} from "time/people/study/StudyEvent"
+import {RR0Event} from "time/Event"
+import {PeopleRenderOptions} from "people/render/HTMLPeopleRenderer"
+import {TimeRenderOptions} from "time/Time"
 
 export interface EventRenderOptions {
   who: PeopleRenderOptions

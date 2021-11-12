@@ -1,9 +1,9 @@
-import {RR0Time, TimeRenderer, TimeRenderOptions} from "../Time";
-import {DateTime} from "../DateTime";
-import {HTML, HTMLRenderer} from "../../HTMLRenderer";
-import {BeforeTime} from "../BeforeTime";
-import {WithTimeMessages} from "../TimeMessages";
-import {Translation} from "@rr0/lang";
+import {RR0Time, TimeRenderer, TimeRenderOptions} from "time/Time"
+import {DateTime} from "time/DateTime"
+import {HTML, HTMLRenderer} from "HTMLRenderer"
+import {BeforeTime} from "time/BeforeTime"
+import {WithTimeMessages} from "time/TimeMessages"
+import {Translation} from "@rr0/lang"
 
 
 export class HTMLTimeRenderer extends HTMLRenderer implements TimeRenderer<HTML> {

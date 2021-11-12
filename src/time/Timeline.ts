@@ -1,8 +1,8 @@
-import {RR0Event, RR0EventType} from "./Event";
-import {BirthEventRenderOptions} from "./people/birth/BirthEvent";
-import {OccupationRenderOptions} from "./people/occupation/OccupationEvent";
-import {FoundationEventRenderOptions} from "./org/foundation/FoundationEvent";
-import {StudyRenderOptions} from "./people/study/StudyEvent";
+import {RR0Event, RR0EventType} from "time/Event"
+import {BirthEventRenderOptions} from "time/people/birth/BirthEvent"
+import {OccupationRenderOptions} from "time/people/occupation/OccupationEvent"
+import {FoundationEventRenderOptions} from "time/org/foundation/FoundationEvent"
+import {StudyRenderOptions} from "time/people/study/StudyEvent"
 
 
 export interface TimelineRenderOptions {

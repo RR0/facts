@@ -1,5 +1,5 @@
-import {State} from "./State";
-import {Countries} from "../country/Countries";
+import {State} from "place/state/State"
+import {Countries} from "place/country/Countries"
 
 
 export class States {

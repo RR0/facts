@@ -1,5 +1,5 @@
-import {RR0Time, TimeRenderer, TimeRenderOptions} from "./Time"
-import {BeforeTime} from "./BeforeTime"
+import {RR0Time, TimeRenderer, TimeRenderOptions} from "time/Time"
+import {BeforeTime} from "time/BeforeTime"
 
 
 /**

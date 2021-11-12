@@ -1,13 +1,13 @@
-import {RR0Time} from "../../Time"
-import {RR0EventType} from "../../Event"
-import {OrganizationRenderOptions} from "../../../org/render/HTMLOrganizationRenderer"
-import {Place} from "../../../place/Place"
+import {RR0Time} from "time/Time"
+import {RR0EventType} from "time/Event"
+import {OrganizationRenderOptions} from "org/render/HTMLOrganizationRenderer"
+import {Place} from "place/Place"
 import {OrganizationEvent} from "../OrganizationEvent"
-import {OccupationRenderOptions} from "../../people/occupation/OccupationEvent"
-import {Organization} from "../../../org/Organization"
-import {People} from "../../../people/People"
-import {PeopleRenderOptions} from "../../../people/render/HTMLPeopleRenderer"
-import {EventRenderOptions} from "../../EventRenderer"
+import {OccupationRenderOptions} from "time/people/occupation/OccupationEvent"
+import {Organization} from "org/Organization"
+import {People} from "people/People"
+import {PeopleRenderOptions} from "people/render/HTMLPeopleRenderer"
+import {EventRenderOptions} from "time/EventRenderer"
 
 
 export interface FoundationParentRenderOptions {

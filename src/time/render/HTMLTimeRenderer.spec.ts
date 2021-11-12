@@ -1,9 +1,9 @@
-import {messages_fr} from "../../lang/Messages_fr";
-import {HTMLTimeRenderer} from "./HTMLTimeRenderer";
-import {DateTime} from "../DateTime";
-import {TimeRenderFormat, TimeRenderOptions} from "../Time";
-import {BeforeTime} from "../BeforeTime";
-import {grammar_fr, Translation} from "@rr0/lang";
+import {messages_fr} from "../../lang/Messages_fr"
+import {HTMLTimeRenderer} from "time/render/HTMLTimeRenderer"
+import {DateTime} from "time/DateTime"
+import {TimeRenderFormat, TimeRenderOptions} from "time/Time"
+import {BeforeTime} from "time/BeforeTime"
+import {grammar_fr, Translation} from "@rr0/lang"
 
 
 const translation = new Translation('fr', grammar_fr, messages_fr);

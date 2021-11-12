@@ -1,7 +1,7 @@
-import {BirthMessage} from "./people/birth/BirthMessage";
-import {FoundationMessage} from "./org/foundation/FoundationMessage";
-import {OccupationMessage} from "./people/occupation/OccupationMessage";
-import {StudyMessage} from "./people/study/StudyMessage";
+import {BirthMessage} from "time/people/birth/BirthMessage"
+import {FoundationMessage} from "time/org/foundation/FoundationMessage"
+import {OccupationMessage} from "time/people/occupation/OccupationMessage"
+import {StudyMessage} from "time/people/study/StudyMessage"
 
 
 export interface EventMessages {

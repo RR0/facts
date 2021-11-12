@@ -1,6 +1,6 @@
 import {HTMLPeopleRenderer, NameCase, PeopleNameFormat} from "./HTMLPeopleRenderer"
-import {People} from "../People"
-import {messages_fr} from "../../lang/Messages_fr"
+import {People} from "people/People"
+import {messages_fr} from "lang/Messages_fr"
 import {grammar_fr, Translation} from "@rr0/lang"
 import {Gender} from "@rr0/common"
 

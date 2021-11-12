@@ -1,11 +1,11 @@
-import {PeopleEvent} from "../PeopleEvent"
-import {OrganizationRenderOptions} from "../../../org/render/HTMLOrganizationRenderer"
-import {RR0Time} from "../../Time"
-import {People} from "../../../people/People"
-import {Place} from "../../../place/Place"
-import {RR0EventType} from "../../Event"
-import {School} from "../../../org/School"
-import {EventRenderOptions} from "../../EventRenderer"
+import {PeopleEvent} from "time/people/PeopleEvent"
+import {OrganizationRenderOptions} from "org/render/HTMLOrganizationRenderer"
+import {RR0Time} from "time/Time"
+import {People} from "people/People"
+import {Place} from "place/Place"
+import {RR0EventType} from "time/Event"
+import {School} from "org/School"
+import {EventRenderOptions} from "time/EventRenderer"
 
 
 export interface StudyRenderOptions extends EventRenderOptions {

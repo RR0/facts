@@ -1,4 +1,4 @@
-import {OrgMessages} from "../../../org/OrgMessages";
+import {OrgMessages} from "org/OrgMessages"
 
 
 export interface FoundationMessage {

@@ -1,11 +1,11 @@
-import {Timeline} from "./Timeline"
-import {City} from "../place/City"
-import {People} from "../people/People"
-import {DateTime} from "./DateTime"
-import {Army} from "../org/Army"
-import {BirthEvent} from "./people/birth/BirthEvent"
+import {Timeline} from "time/Timeline"
+import {City} from "place/City"
+import {People} from "people/People"
+import {DateTime} from "time/DateTime"
+import {Army} from "org/Army"
+import {BirthEvent} from "time/people/birth/BirthEvent"
 import {OccupationEvent, OccupationRole} from "./people/occupation/OccupationEvent"
-import {States} from "../place/state/States"
+import {States} from "place/state/States"
 import {Gender} from "@rr0/common"
 
 

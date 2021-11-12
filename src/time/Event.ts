@@ -1,5 +1,5 @@
-import {Place} from '../place/Place'
-import {RR0Time} from "./Time"
+import {Place} from 'place/Place'
+import {RR0Time} from "time/Time"
 import {EventRenderer, EventRenderOptions} from "./EventRenderer"
 
 
