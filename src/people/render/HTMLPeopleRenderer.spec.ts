@@ -1,15 +1,16 @@
-import {HTMLPeopleRenderer, NameCase, PeopleNameFormat} from "./HTMLPeopleRenderer";
-import {Gender, People} from "../People";
-import {messages_fr} from "../../lang/Messages_fr";
-import {grammar_fr, Translation} from "@rr0/lang";
+import {HTMLPeopleRenderer, NameCase, PeopleNameFormat} from "./HTMLPeopleRenderer"
+import {People} from "../People"
+import {messages_fr} from "../../lang/Messages_fr"
+import {grammar_fr, Translation} from "@rr0/lang"
+import {Gender} from "@rr0/common"
 
-const translation = new Translation('fr', grammar_fr, messages_fr);
-const renderer = new HTMLPeopleRenderer(translation);
+const translation = new Translation('fr', grammar_fr, messages_fr)
+const renderer = new HTMLPeopleRenderer(translation)
 
 test('render people with middle name', () => {
-  const peopleWithMiddleName = new People(Gender.male, `Josef`, 'Hynek', `Allen`);
+  const peopleWithMiddleName = new People(Gender.male, `Josef`, 'Hynek', `Allen`)
   {
-    const html = renderer.render(peopleWithMiddleName, PeopleNameFormat.middleAbbreviated);
+    const html = renderer.render(peopleWithMiddleName, PeopleNameFormat.middleAbbreviated)
     expect(html).toBe('Josef A. Hynek')
   }
   {

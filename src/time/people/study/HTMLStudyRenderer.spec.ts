@@ -1,6 +1,6 @@
 import {HTMLOrganizationRenderer, OrganizationDescriptionOptions} from "../../../org/render/HTMLOrganizationRenderer"
 import {StudyEvent, StudyRenderOptions} from "./StudyEvent"
-import {Gender, People} from "../../../people/People"
+import {People} from "../../../people/People"
 import {DateTime} from "../../DateTime"
 import {TimeRenderFormat} from "../../Time"
 import {HTMLStudyRenderer} from "./HTMLStudyRenderer"
@@ -8,9 +8,10 @@ import {BeforeTime} from "../../BeforeTime"
 import {messages_fr} from "../../../lang/Messages_fr"
 import {HTMLPlaceRenderer} from "../../../place/render/HTMLPlaceRenderer"
 import {School, SchoolType} from "../../../org/School"
-import {Countries} from "../../../place/country/Countries";
-import {HTMLPeopleRenderer, PeopleNameFormat} from "../../../people/render/HTMLPeopleRenderer";
-import {grammar_fr, Translation} from "@rr0/lang";
+import {Countries} from "../../../place/country/Countries"
+import {HTMLPeopleRenderer, PeopleNameFormat} from "../../../people/render/HTMLPeopleRenderer"
+import {grammar_fr, Translation} from "@rr0/lang"
+import {Gender} from "@rr0/common"
 
 
 const translation = new Translation('fr', grammar_fr, messages_fr)

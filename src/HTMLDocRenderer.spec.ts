@@ -1,29 +1,29 @@
-import {PeopleNameFormat} from "./people/render/HTMLPeopleRenderer";
-import {Gender, People} from "./people/People";
-import {OrganizationDescriptionOptions} from "./org/render/HTMLOrganizationRenderer";
-import {HTMLDocRenderer, HTMLDocRenderOptions} from "./HTMLDocRenderer";
-import {User} from "./user/User";
-import {TimeRenderFormat} from "./time/Time";
-import {States} from "./place/state/States";
-import {Company} from "./org/Company";
-import {School, SchoolType} from "./org/School";
-import {Countries} from "./place/country/Countries";
-import {BeforeTime} from "./time/BeforeTime";
-import {StudyEvent} from "./time/people/study/StudyEvent";
-import {City} from "./place/City";
-import {OccupationEvent, OccupationRole} from "./time/people/occupation/OccupationEvent";
-import {DateTime} from "./time/DateTime";
-import {BirthEvent} from "./time/people/birth/BirthEvent";
-import {KeyValue} from "@rr0/common";
-import {grammar_en, grammar_fr, Language, Translation} from "@rr0/lang";
-import {messages_fr} from "./lang/Messages_fr";
-import {messages_en} from "./lang/Messages_en";
+import {PeopleNameFormat} from "./people/render/HTMLPeopleRenderer"
+import {People} from "./people/People"
+import {OrganizationDescriptionOptions} from "./org/render/HTMLOrganizationRenderer"
+import {HTMLDocRenderer, HTMLDocRenderOptions} from "./HTMLDocRenderer"
+import {User} from "./user/User"
+import {TimeRenderFormat} from "./time/Time"
+import {States} from "./place/state/States"
+import {Company} from "./org/Company"
+import {School, SchoolType} from "./org/School"
+import {Countries} from "./place/country/Countries"
+import {BeforeTime} from "./time/BeforeTime"
+import {StudyEvent} from "./time/people/study/StudyEvent"
+import {City} from "./place/City"
+import {OccupationEvent, OccupationRole} from "./time/people/occupation/OccupationEvent"
+import {DateTime} from "./time/DateTime"
+import {BirthEvent} from "./time/people/birth/BirthEvent"
+import {Gender, KeyValue} from "@rr0/common"
+import {grammar_en, grammar_fr, Language, Translation} from "@rr0/lang"
+import {messages_fr} from "./lang/Messages_fr"
+import {messages_en} from "./lang/Messages_en"
 
 
 const languages: KeyValue<Language> = {
   fr: {messages: messages_fr, grammar: grammar_fr},
   en: {messages: messages_en, grammar: grammar_en}
-};
+}
 
 
 // Timeline

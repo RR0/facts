@@ -1,31 +1,32 @@
-import {Gender, People} from "../../people/People";
-import {City} from "../../place/City";
-import {DateTime} from "../DateTime";
-import {HTMLEventRenderer} from "./HTMLEventRenderer";
-import {HTMLPeopleRenderer, PeopleNameFormat} from "../../people/render/HTMLPeopleRenderer";
-import {HTMLTimeRenderer} from "./HTMLTimeRenderer";
-import {HTMLPlaceRenderer} from "../../place/render/HTMLPlaceRenderer";
-import {HTMLOrganizationRenderer} from "../../org/render/HTMLOrganizationRenderer";
-import {messages_fr} from "../../lang/Messages_fr";
-import {TimeRenderFormat} from "../Time";
-import {HTMLOccupationRenderer} from "../people/occupation/HTMLOccupationRenderer";
-import {BirthEvent, BirthEventRenderOptions, OccupationFormat} from "../people/birth/BirthEvent";
-import {HTMLBirthEventRenderer} from "../people/birth/HTMLBirthEventRenderer";
-import {HTMLFoundationEventRenderer} from "../org/foundation/HTMLFoundationEventRenderer";
-import {HTMLStudyRenderer} from "../people/study/HTMLStudyRenderer";
-import {Countries} from "../../place/country/Countries";
-import {States} from "../../place/state/States";
-import {grammar_fr, Translation} from "@rr0/lang";
+import {People} from "../../people/People"
+import {City} from "../../place/City"
+import {DateTime} from "../DateTime"
+import {HTMLEventRenderer} from "./HTMLEventRenderer"
+import {HTMLPeopleRenderer, PeopleNameFormat} from "../../people/render/HTMLPeopleRenderer"
+import {HTMLTimeRenderer} from "./HTMLTimeRenderer"
+import {HTMLPlaceRenderer} from "../../place/render/HTMLPlaceRenderer"
+import {HTMLOrganizationRenderer} from "../../org/render/HTMLOrganizationRenderer"
+import {messages_fr} from "../../lang/Messages_fr"
+import {TimeRenderFormat} from "../Time"
+import {HTMLOccupationRenderer} from "../people/occupation/HTMLOccupationRenderer"
+import {BirthEvent, BirthEventRenderOptions, OccupationFormat} from "../people/birth/BirthEvent"
+import {HTMLBirthEventRenderer} from "../people/birth/HTMLBirthEventRenderer"
+import {HTMLFoundationEventRenderer} from "../org/foundation/HTMLFoundationEventRenderer"
+import {HTMLStudyRenderer} from "../people/study/HTMLStudyRenderer"
+import {Countries} from "../../place/country/Countries"
+import {States} from "../../place/state/States"
+import {grammar_fr, Translation} from "@rr0/lang"
+import {Gender} from "@rr0/common"
 
 
 const hynek = new People(Gender.male, 'Josef', 'Hynek', `Allen`)
 const chicago = new City('Chicago', States.illinois)
 
-const translation = new Translation('fr', grammar_fr, messages_fr);
-const peopleRenderer = new HTMLPeopleRenderer(translation);
-const placeRenderer = new HTMLPlaceRenderer(translation);
-const timeRenderer = new HTMLTimeRenderer(translation);
-const orgRenderer = new HTMLOrganizationRenderer(translation, placeRenderer);
+const translation = new Translation('fr', grammar_fr, messages_fr)
+const peopleRenderer = new HTMLPeopleRenderer(translation)
+const placeRenderer = new HTMLPlaceRenderer(translation)
+const timeRenderer = new HTMLTimeRenderer(translation)
+const orgRenderer = new HTMLOrganizationRenderer(translation, placeRenderer)
 const occupationRenderer = new HTMLOccupationRenderer(translation, orgRenderer, peopleRenderer);
 const birthEventRenderer = new HTMLBirthEventRenderer(translation, peopleRenderer, timeRenderer, placeRenderer, occupationRenderer);
 const foundationRenderer = new HTMLFoundationEventRenderer(translation, peopleRenderer, orgRenderer, timeRenderer, placeRenderer, occupationRenderer);

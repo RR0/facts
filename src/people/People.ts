@@ -1,13 +1,7 @@
-import {PeopleRenderOptions} from "./render/HTMLPeopleRenderer";
-import {Timeline} from "../time/Timeline";
-import {Country} from "../place/country/Country";
-
-
-export enum Gender {
-  neutral = 'neutral',
-  male = 'male',
-  female = 'female'
-}
+import {PeopleRenderOptions} from "./render/HTMLPeopleRenderer"
+import {Timeline} from "../time/Timeline"
+import {Country} from "../place/country/Country"
+import {Gender} from "@rr0/common"
 
 
 export interface PeopleRenderer<R> {

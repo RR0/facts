@@ -1,12 +1,13 @@
-import {BirthEvent, BirthEventRenderer, BirthEventRenderOptions} from "./BirthEvent";
-import {TimeRenderer} from "../../Time";
-import {Gender, People, PeopleRenderer} from "../../../people/People";
-import {OccupationEvent, OccupationEventRenderer} from "../occupation/OccupationEvent";
-import {Country} from "../../../place/country/Country";
-import {HTML, HTMLRenderer} from "../../../HTMLRenderer";
-import {Place, PlaceRenderer} from "../../../place/Place";
-import {WithEventMessages} from "../../EventMessages";
-import {Translation} from "@rr0/lang";
+import {BirthEvent, BirthEventRenderer, BirthEventRenderOptions} from "./BirthEvent"
+import {TimeRenderer} from "../../Time"
+import {People, PeopleRenderer} from "../../../people/People"
+import {OccupationEvent, OccupationEventRenderer} from "../occupation/OccupationEvent"
+import {Country} from "../../../place/country/Country"
+import {HTML, HTMLRenderer} from "../../../HTMLRenderer"
+import {Place, PlaceRenderer} from "../../../place/Place"
+import {WithEventMessages} from "../../EventMessages"
+import {Translation} from "@rr0/lang"
+import {Gender} from "@rr0/common"
 
 export class HTMLBirthEventRenderer extends HTMLRenderer implements BirthEventRenderer<HTML> {
 
@@ -15,7 +16,7 @@ export class HTMLBirthEventRenderer extends HTMLRenderer implements BirthEventRe
     private peopleRenderer: PeopleRenderer<HTML>,
     private timeRenderer: TimeRenderer<HTML>,
     private placeRenderer: PlaceRenderer<HTML>,
-    private occupationRenderer: OccupationEventRenderer<HTML>,
+    private occupationRenderer: OccupationEventRenderer<HTML>
   ) {
     super(translation);
   }
