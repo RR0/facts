@@ -1,10 +1,10 @@
 {
   "name": "@rr0/facts",
   "author": "Jérôme Beau",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "Facts representation API",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "license": "MIT",
   "homepage": "https://github.com/RR0/facts",
   "repository": {
@@ -12,17 +12,17 @@
     "url": "git+https://github.com/RR0/facts.git"
   },
   "scripts": {
-    "build": "parcel build src/index.ts --no-scope-hoist",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test",
+    "clean": "rm -Rf dist & rm -Rf node_modules",
+    "prebuild": "npm install",
+    "build": "tsc",
+    "prepublishOnly": "npm test && npm run build",
     "test": "jest"
   },
   "dependencies": {
-    "@rr0/common": "^0.1.4",
-    "@rr0/lang": "^0.1.4"
+    "@rr0/common": "~0.1.9",
+    "@rr0/lang": "~0.1.10"
   },
   "devDependencies": {
-    "parcel": "2.0.0-beta.1",
     "@types/jest": "^26.0.14",
     "jest": "^26.4.2",
     "ts-jest": "^26.4.1",
