@@ -31,24 +31,27 @@ class FrenchMessages implements Messages {
       [CountryCode.cz]: {
         name: 'Tchéquie',
         nationality: {
-          male: 'tchèque',
-          female: 'tchèque',
+          male: "tchèque",
+          neutral: "tchèque",
+          female: "tchèque"
         },
         state: {}
       },
       [CountryCode.cs]: {
         name: 'Tchécoslovaquie',
         nationality: {
-          male: 'tchécoslovaque',
-          female: 'tchécoslovaque',
+          male: "tchécoslovaque",
+          neutral: "tchécoslovaque",
+          female: "tchécoslovaque"
         },
         state: {}
       },
       [CountryCode.fr]: {
         name: 'France',
         nationality: {
-          male: 'français',
-          female: 'française'
+          male: "français",
+          neutral: "français",
+          female: "française"
         },
         state: {
           idf: {short: 'IDF', long: 'Île de France'}
@@ -57,16 +60,18 @@ class FrenchMessages implements Messages {
       [CountryCode.sk]: {
         name: 'Slovaquie',
         nationality: {
-          male: 'slovaque',
-          female: 'slovaque'
+          male: "slovaque",
+          neutral: "slovaque",
+          female: "slovaque"
         },
         state: {}
       },
       [CountryCode.us]: {
         name: 'États-Unis',
         nationality: {
-          male: 'américain',
-          female: 'américaine',
+          male: "américain",
+          neutral: "américain",
+          female: "américaine"
         },
         state: {
           il: {short: 'IL', long: 'Illinois'}

@@ -4,16 +4,17 @@ import {HTML, HTMLRenderer} from "HTMLRenderer"
 import {BeforeTime} from "time/BeforeTime"
 import {WithTimeMessages} from "time/TimeMessages"
 import {Translation} from "@rr0/lang"
+import {KeyValue} from "@rr0/common"
 
 
-export class HTMLTimeRenderer extends HTMLRenderer implements TimeRenderer<HTML> {
+export class HTMLTimeRenderer extends HTMLRenderer<KeyValue<any>> implements TimeRenderer<HTML> {
 
   constructor(translation: Translation<WithTimeMessages>) {
     super(translation)
   }
 
   render(time: RR0Time, options: TimeRenderOptions): HTML {
-    return time.toString();
+    return time.toString()
   }
 
   renderDate(time: DateTime, options: TimeRenderOptions): HTML {

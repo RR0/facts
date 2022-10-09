@@ -1,7 +1,8 @@
 {
   "name": "@rr0/facts",
+  "type": "module",
   "author": "Jérôme Beau",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Facts representation API",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,21 +13,21 @@
     "url": "git+https://github.com/RR0/facts.git"
   },
   "scripts": {
-    "clean": "rm -Rf dist & rm -Rf node_modules",
+    "clean": "rm -Rf dist && rm -Rf node_modules && rm package-lock.json",
     "prebuild": "npm install",
     "build": "tsc",
-    "prepublishOnly": "npm test && npm run build",
-    "test": "jest"
+    "prepublishOnly": "npm run build && npm test",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "dependencies": {
-    "@rr0/common": "~0.1.9",
-    "@rr0/lang": "~0.1.10"
+    "@rr0/common": "~0.1.10",
+    "@rr0/lang": "~0.1.11"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "4.0.3"
+    "@types/jest": "~29.1.2",
+    "jest": "~29.1.2",
+    "ts-jest": "~29.0.3",
+    "typescript": "4.8.4"
   },
   "keywords": [
     "facts",

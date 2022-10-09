@@ -8,8 +8,9 @@ import {OccupationEvent, OccupationEventRenderer} from "time/people/occupation/O
 import {Organization, OrganizationRenderer} from "org/Organization"
 import {WithEventMessages} from "time/EventMessages"
 import {Translation} from "@rr0/lang"
+import {KeyValue} from "@rr0/common"
 
-export class HTMLFoundationEventRenderer extends HTMLRenderer implements FoundationEventRenderer<HTML> {
+export class HTMLFoundationEventRenderer extends HTMLRenderer<KeyValue<any>> implements FoundationEventRenderer<HTML> {
 
   constructor(
     translation: Translation<WithEventMessages>,
@@ -17,9 +18,9 @@ export class HTMLFoundationEventRenderer extends HTMLRenderer implements Foundat
     private orgRenderer: OrganizationRenderer<HTML>,
     private timeRenderer: TimeRenderer<HTML>,
     private placeRenderer: PlaceRenderer<HTML>,
-    private occupationRenderer: OccupationEventRenderer<HTML>,
+    private occupationRenderer: OccupationEventRenderer<HTML>
   ) {
-    super(translation);
+    super(translation)
   }
 
   renderFoundation(foundation: FoundationEvent, options: FoundationEventRenderOptions): HTML {

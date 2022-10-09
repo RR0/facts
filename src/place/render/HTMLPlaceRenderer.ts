@@ -8,7 +8,7 @@ import {Translation} from "@rr0/lang"
 import {Gender} from "@rr0/common"
 
 
-export class HTMLPlaceRenderer extends HTMLRenderer implements PlaceRenderer<HTML>, CityRenderer<HTML> {
+export class HTMLPlaceRenderer extends HTMLRenderer<WithPlaceMessages> implements PlaceRenderer<HTML>, CityRenderer<HTML> {
 
   constructor(translation: Translation<WithPlaceMessages>) {
     super(translation)

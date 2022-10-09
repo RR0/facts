@@ -1,6 +1,7 @@
 import {People, PeopleRenderer} from "people/People"
 import {HTML, HTMLRenderer} from "HTMLRenderer"
 import {Translation} from "@rr0/lang"
+import {WithPeopleMessages} from "people/PeopleMessages"
 
 
 export enum NameCase {
@@ -93,9 +94,9 @@ export interface PeopleRenderOptions {
 }
 
 
-export class HTMLPeopleRenderer extends HTMLRenderer implements PeopleRenderer<HTML> {
+export class HTMLPeopleRenderer extends HTMLRenderer<WithPeopleMessages> implements PeopleRenderer<HTML> {
 
-  constructor(translation: Translation<any>) {
+  constructor(translation: Translation<WithPeopleMessages>) {
     super(translation)
   }
 

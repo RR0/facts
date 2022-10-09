@@ -32,24 +32,27 @@ class EnglishMessages implements Messages {
       [CountryCode.cz]: {
         name: 'Czechia',
         nationality: {
-          male: 'czech',
-          female: 'czech',
+          male: "czech",
+          neutral: "czech",
+          female: "czech"
         },
         state: {}
       },
       [CountryCode.cs]: {
         name: 'Czechoslovakia',
         nationality: {
-          male: 'czechoslovak',
-          female: 'czechoslovak',
+          male: "czechoslovak",
+          neutral: "czechoslovak",
+          female: "czechoslovak"
         },
         state: {}
       },
       [CountryCode.fr]: {
         name: 'France',
         nationality: {
-          male: 'french',
-          female: 'french'
+          male: "french",
+          neutral: "french",
+          female: "french"
         },
         state: {
           idf: {short: 'IDF', long: 'Île de France'}
@@ -58,16 +61,18 @@ class EnglishMessages implements Messages {
       [CountryCode.sk]: {
         name: 'Slovakia',
         nationality: {
-          male: 'slovak',
-          female: 'slovak',
+          male: "slovak",
+          neutral: "slovak",
+          female: "slovak"
         },
         state: {}
       },
       [CountryCode.us]: {
         name: 'USA',
         nationality: {
-          male: 'american',
-          female: 'american',
+          male: "american",
+          neutral: "american",
+          female: "american"
         },
         state: {
           il: {short: 'IL', long: 'Illinois'}

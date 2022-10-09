@@ -1,6 +1,5 @@
-/.cache/
-/.parcel-cache/
-.circleci
-.idea
-jest.config.js
 /src/**/*
+.idea/**/*
+.circleci/*
+jest*.*
+*.test.*
