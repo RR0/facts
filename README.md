@@ -1,6 +1,5 @@
 # facts
-
-[![RR0](https://circleci.com/gh/RR0/facts.svg?style=svg)](https://app.circleci.com/pipelines/github/RR0/facts)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/RR0/facts/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/RR0/facts/tree/main)
 
 Facts representation and rendering API
 
