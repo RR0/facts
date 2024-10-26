@@ -7,7 +7,7 @@
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/RR0/facts",
+  "homepage": "https://github.com/RR0/facts#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RR0/facts.git"
