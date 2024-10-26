@@ -2,7 +2,7 @@
   "name": "@rr0/facts",
   "type": "module",
   "author": "Jérôme Beau",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Facts representation API",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
